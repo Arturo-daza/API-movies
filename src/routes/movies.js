@@ -5,10 +5,7 @@ const router= Router()
 const movieSchema = require("../models/movie")
 const movie = require("../models/movie")
 
-// router.get("/",(req,res)=>{
-//     res.json({"hola": "hola"})
-// })
-// consult collection
+
 router.get("/", (req, res) => {
     movieSchema.find()
         .then((data) => res.json(data))

@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 
 // settings
 require('dotenv').config();
-app.set('port', process.env.PORT || 3001)
+app.set('port', process.env.PORT || 8000)
 app.set('json spaces', 2)
 
 // middleware
