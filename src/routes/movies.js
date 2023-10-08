@@ -3,7 +3,6 @@ const router= Router()
 
 //esquema de mongo
 const movieSchema = require("../models/movie")
-const movie = require("../models/movie")
 
 
 router.get("/", (req, res) => {
@@ -43,7 +42,7 @@ router.put('/movie/:id', (req, res) => {
     .catch((error) => res.json({ message: error }));
 });
 
-//Eliminar un animal por su id
+//Eliminar un movie por su id
 router.delete("/movie/:id", (req, res) => {
     const {id} = req.params; 
     movieSchema
